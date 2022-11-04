@@ -1,0 +1,450 @@
+<!--HTML 5-->
+<!DOCTYPE html>
+<!--INFORMA O IDIOMA-->
+<html lang="pt-br">
+
+<head>
+    <!--CODIFICAÇÃO DE CARACTERES ESPECIAIS-->
+    <meta charset="UTF-8">
+    <!--AUMENTA A COMPATIBILIDADE COM NAVEGADORES-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--PERMITE A PÁGINA SER RESPONSIVA-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--TITULO PRINCIPAL DO SITE-->
+    <title>Igreja Prebiteriana do Brasil em Vassouras</title>
+    <!--FOLHA DE ESTILO-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--ICONES DO ICONFONT-->
+    <link rel="stylesheet" href="css/icones/icofont.min.css">
+    <!--CSS DO SWIPER-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--CSS DO AOS-->
+    <link rel="stylesheet" href="css/aos.css">
+</head>
+
+<body>
+
+    <!--CABEÇALHO-->
+    <header id="home">
+        <div class="container">
+            <!--LOGOMARCA-->
+            <div class="logo alinhamento">
+                <a href="#">
+                    <img src="imagens/logo/logo-removebg-preview.png" alt="Igreja Prebiteriana do Brasil">
+                </a>
+            </div>
+            <!--LOGOMARCA-->
+
+            <!--MENU PRINCIPAL-->
+            <nav class="menu alinhamento">
+                <ul>
+                    <li><a href="#">Página Inicial</a></li>
+                    <li><a href="#fotos">Fotos</a></li>
+                    <li><a href="#encontros">Encontros</a></li>
+                    <li class="submenu" onclick="gerenciarSubmenu()">
+                        <a href="#quem-somos">Quem Somos</a>
+                        <ul>
+                            <li><a href="#nossa-historia">Nossa História</a></li>
+                            <li><a href="#nossa-crenca">Nossa Crença</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#lideranca">Liderança</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <!--MENU PRINCIPAL-->
+
+            <!--REDES SOCIAIS-->
+            <div class="redes-sociais alinhamento">
+                <a href="https://www.youtube.com/channel/UCf6tfQKbiXR4RKuqJYZ6D-A"
+                    class="icofont-youtube-play icofont-2x"></a>
+                <a href="https://www.instagram.com/igrejapresbiterianaemvassouras/"
+                    class="icofont-instagram icofont-2x"></a>
+                <a href="https://www.facebook.com/presbiterianaemvassouras" class="icofont-facebook icofont-2x"></a>
+            </div>
+            <!--REDES SOCIAIS-->
+
+            <!--BOTÃO MOBILE-->
+            <div class="botao-mobile">
+                <i onclick="gerenciarMenu()" class="icofont-navigation-menu icofont-2x"></i>
+            </div>
+            <!--BOTÃO MOBILE-->
+        </div>
+    </header>
+    <!--CABEÇALHO-->
+
+    <!--SEÇÃO DE BOAS VINDAS-->
+    <section class="boas-vindas">
+        <div class="container secao-boas-vindas">
+            <h1>Ola Visitante!</h1>
+
+            <h2>Seja bem vindo a Igreja Presbiteriana do Brasil em Vassouras.</h2>
+
+            <h3>Que a paz do Senhor Jesus Cristo esteja convosco.</h3>
+
+            <h4>Se você está procurando o ambiente ideal para adorar ao Senhor!<br>
+                você está no lugar certo.
+            </h4>
+
+            <a href="#quem-somos">Clique aqui e saiba mais</a>
+        </div>
+    </section>
+    <!--SEÇÃO DE BOAS VINDAS-->
+
+    <!--SEÇÃO DE FOTOS-->
+    <section class="secao-fotos" id="fotos">
+        <div class="fotos">
+            <!--TITLO DA SEÇÃO-->
+            <div class="titulo">
+                <span>seção de fotos</span>
+                <p>Veja algumas fotos de nossos eventos e obras realizados na cidade de Vassouras/RJ</p>
+            </div>
+
+            <!--CONTAINER PRINCIPAL DO SLIDER-->
+            <div class="swiper swiper-fotos">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="imagens/eventos/evento-1.webp" alt="Evento 1">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="imagens/eventos/evento-2.webp" alt="Evento 2">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="imagens/eventos/evento-3.webp" alt="Evento 3">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="imagens/eventos/evento-4.webp" alt="Evento 4">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="imagens/eventos/evento-5.webp" alt="Evento 5">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="imagens/eventos/evento-6.webp" alt="Evento 6">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="imagens/eventos/evento-7.webp" alt="Evento 7">
+                    </div>
+                </div>
+
+                <!--PAGINAÇÃO-->
+                <div class="swiper-pagination"></div>
+
+                <!--BOTÕES DE NAVEGAÇÃO-->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!--CONTAINER PRINCIPAL DO SLIDER-->
+        </div>
+    </section>
+    <!--SEÇÃO DE FOTOS-->
+
+    <!--ENCONTROS SEMANAIS-->
+    <section class="section-encontros-semanais" id="encontros">
+        <div class="container encontros-semanais">
+            <div class="texto">
+                <span>encontros semanais</span>
+            </div>
+
+            <!--CONTAINER PRINCIPAL DO SLIDER-->
+            <div class="swiper swiper-encontros-semanais">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="cartao">
+                            <div class="cartao-cabecalho">
+                                <img class="" src="imagens/biblia.webp" alt="">
+                            </div>
+                            <div class="cartao-conteudo">
+                                Domingo<br>
+                                09:00 horas<br>
+                                Escola Bíblica Dominical<br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="cartao">
+                            <div class="cartao-cabecalho">
+                                <img class="" src="imagens/biblia.webp" alt="">
+                            </div>
+                            <div class="cartao-conteudo">
+                                Quarta<br>
+                                19:30 horas<br>
+                                Oração nos Lares<br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="cartao">
+                            <div class="cartao-cabecalho">
+                                <img class="" src="imagens/biblia.webp" alt="">
+                            </div>
+                            <div class="cartao-conteudo">
+                                Sexta<br>
+                                19:30 horas<br>
+                                Oração e Estudo da Palavra<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PAGINAÇÃO-->
+                <div class="swiper-pagination"></div>
+
+                <!--BOTÕES DE NAVEGAÇÃO-->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!--CONTAINER PRINCIPAL DO SLIDER-->
+        </div>
+    </section>
+    <!--ENCONTROS SEMANAIS-->
+
+    <!--QUEM SOMOS-->
+    <section class="section-quem-somos" id="quem-somos">
+        <div class="container section-quem-somos">
+            <div class="titulo" data-aos="fade-up" data-aos-duration="2000">
+                <span>quem somos</span>
+            </div>
+
+            <p data-aos="fade-up" data-aos-duration="3000">Somos uma Igreja Cristã de tradição Reformada. Buscamos a glória de Deus em nossos cultos e vida.
+                Somos parte da Igreja Presbiteriana do Brasil, denominação evangélica que está em solo brasileiro
+                desde 1859.</p>
+
+            <div class="mvv" data-aos="fade-up" data-aos-duration="1000">
+                <div class="box-mvv">
+                    <h3>missão</h3>
+                    <p>Ser uma família de discípulos do Senhor Jesus, mostrando o valor que damos a adoração a Deus e a
+                        relevância do Evangelho para a vida das pessoas do bairro e da nossa cidade. Buscamos ser uma
+                        igreja bíblica e acolhedora.</p>
+                </div>
+
+                <div class="box-mvv">
+                    <h3>visão</h3>
+                    <p>Ser uma igreja forte, bíblica e reformada, que glorifica a Deus e cuida de pessoas na cidade de
+                        Vassouras e fora, por meio da obra missionária.</p>
+                </div>
+
+                <div class="box-mvv">
+                    <h3>valores</h3>
+                    <p>A Bíblia devidamente interpretada e aplicada a vida das pessoas, o que leva a adoração a Deus e
+                        amor ao próximo.</p>
+                </div>
+            </div>
+
+            <div class="nossa-historia" id="nossa-historia">
+                <h4 data-aos="fade-up" data-aos-duration="1000">Essa é a nossa história...</h4>
+                <p>A história da Congregação Presbiteriana em Vassouras teve início no ano de 1964 por iniciativa do
+                    casal
+                    Presbítero Natanael Barbosa e Edir Muzi, que abriu as portas de sua residência, na Rua Edgard
+                    Ballard,
+                    Bairro Santa Terezinha para a realização de reuniões dominicais de Escola Bíblica pela manhã e Culto
+                    de
+                    Adoração à noite.</p>
+                <img src="imagens/fotos/casal.png" alt="Casal" data-aos="fade-up" data-aos-duration="1000">
+                <span data-aos="fade-up" data-aos-duration="1000">D. Edir e Presb. Natanael</span>
+                <p data-aos="fade-up" data-aos-duration="1000">O trabalho que começou tímido agora crescia; Deus acrescentava irmãos e irmãs e o casal precisou ser
+                    auxiliado.</p>
+
+                <p data-aos="fade-up" data-aos-duration="1000">A ajuda veio da Congregação Presbiteriana de Governador Portela, Distrito de Miguel Pereira - cidade
+                    vizinha à Vassouras, e o lar do casal Natanael e Edir tornou-se pequeno para comportar aqueles que o
+                    Senhor enviava; assim, para oferecer mais conforto aos congregados e visitantes o trabalho foi
+                    transferido para a Rua Nações Unidas, no Centro.</p>
+
+                <p data-aos="fade-up" data-aos-duration="1000">As dificuldades vieram. A Igreja Presbiteriana de Governador Portela já não conseguia mais atender as
+                    necessidades da Obra do Senhor em Vassouras, todavia não querendo que a semente morresse sem
+                    frutificar,
+                    transferiu o trabalho às mãos da 1ª Igreja Presbiteriana de Barra do Piraí, sendo, o mesmo,
+                    interrompido
+                    algum tempo após a sua transferência; por este motivo, alguns membros da congregação passaram a
+                    frequentar a Igreja Presbiteriana de Barra do Piraí e outros a Igreja Congregacional em Vassouras,
+                    ficando o sonho de ter uma Igreja Presbiteriana em Vassouras estagnado.</p>
+
+                <p data-aos="fade-up" data-aos-duration="1000">Cumprido o tempo de Deus, chegou à 1ª Igreja Presbiteriana de Barra do Piraí o Rev. Davi Monteiro
+                    Cavalcante, o qual incentivou e apoiou a retomada dos trabalhos em Vassouras.</p>
+
+                <p data-aos="fade-up" data-aos-duration="1000">Cumprido o tempo de Deus, chegou à 1ª Igreja Presbiteriana de Barra do Piraí o Rev. Davi Monteiro
+                    Cavalcante, o qual incentivou e apoiou a retomada dos trabalhos em Vassouras.</p>
+
+
+                <p data-aos="fade-up" data-aos-duration="1000">Reiniciada a obra, os membros que frequentavam a Igreja Congregacional uniram-se à 1ª Igreja
+                    Presbiteriana de Barra do Piraí e Deus, mais uma vez, enviou novos irmãos e irmãs para somar forças
+                    e
+                    alavancar a obra em Vassouras.
+                </p>
+                <p data-aos="fade-up" data-aos-duration="1000">O trabalho se firmava e, novamente o local das reuniões já não comportava o número de congregados e
+                    visitantes, assim, uma sala foi alugada para melhor comportá-los. No entanto, as adversidades
+                    fizeram
+                    com que mais uma vez o trabalho fosse interrompido, desta vez, porém, os membros da Congregação
+                    continuaram a frequentar a 1ª Igreja Presbiteriana de Barra do Piraí.
+                </p>
+                <p data-aos="fade-up" data-aos-duration="1000">Após tantas idas e vindas, a história da Congregação Presbiteriana em Vassouras começa a mudar. A
+                    chegada do Pastor Devalde Ferreira da Cunha na 1ª Igreja Presbiteriana de Barra do Piraí no mês de
+                    abril
+                    de 1988 foi o marco, este se dispôs, a mais uma vez retomar a obra em Vassouras, primeiramente com
+                    reuniões realizadas nos lares dos membros da Congregação, mais tarde, a convite, realizavam-se as
+                    reuniões também nos lares dos não evangélicos. Desta forma Deus trabalhava e trazia-os aos pés de
+                    Cristo, alguns permanecem conosco até hoje.</p>
+                <p data-aos="fade-up" data-aos-duration="1000">Deus estabilizava a obra... a Congregação passou a funcionar nas dependências cedidas pelos irmãos
+                    Josias e Brasilina, à Rua Maria Gomes, 13 - Madruga.</p>
+                <p data-aos="fade-up" data-aos-duration="1000">No dia 30 de julho de 1988 foi estabelecida, oficialmente, a Congregação Presbiteriana de Vassouras,
+                    o
+                    culto em Ação de Graças, realizado em um salão alugado na Rua Domingos Mota e contou com a
+                    participação
+                    de vários presbíteros, irmãos e irmãs da 1ª Igreja Presbiteriana de Barra do Piraí e a Palavra foi
+                    pregada pelo Reverendo Cleidir Gonçalves - Presidente do Presbitério na época. Em dezembro de 1988 o
+                    citado salão não mais acomodava confortavelmente o número de pessoas enviadas por Deus, a mudança
+                    foi
+                    necessária.</p>
+                <p data-aos="fade-up" data-aos-duration="1000">Para a glória e honra do nosso bondoso Deus, um imóvel foi adquirido na Rua Projetada A, 16 - Bairro
+                    Tambasco.</p>
+                <p data-aos="fade-up" data-aos-duration="1000">Nesta empreitada, de muita valia nos foi a mão estendida da Congregação do Coimbra/Barra do Piraí,a
+                    qual
+                    nos ajudou financeiramente.</p>
+                <p data-aos="fade-up" data-aos-duration="1000">Edificado, nosso templo foi inaugurado no dia 29 de julho de 1990 sob o pastoreio do Pastor Devalde -
+                    Igreja Mãe e o Presbítero Natanael Barbosa como responsável pelo trabalho local.
+                </p>
+                <p data-aos="fade-up" data-aos-duration="1000">O trabalho presbiteriano estabeleceu-se em Vassouras, contudo, a nossa história continua...
+                    direcionada
+                    pelas mãos de Deus até o dia do final feliz quando estaremos reunidos na glória exaltando e adorando
+                    o
+                    Nosso Deus Altíssimo em espírito e em verdade.</p>
+            </div>
+
+            <div class="nossa-crenca" id="nossa-crenca">
+                <h3 data-aos="fade-up" data-aos-duration="1000">nossa crença</h3>
+                <p data-aos="fade-up" data-aos-duration="1000">Sobre cristãos e cremos na essência da nossa fé como descrita no Credo dos Apóstolos:
+                    Creio em Deus Pai, Todo-poderoso, Criador do Céu e da terra.</p>
+                <p data-aos="fade-up" data-aos-duration="1000">Creio em Jesus Cristo, seu único Filho, nosso Senhor, o qual foi concebido por obra do Espírito
+                    Santo;
+                    nasceu da virgem Maria; padeceu sob o poder de Pôncio Pilatos, foi crucificado, morto e sepultado;
+                    ressurgiu dos mortos ao terceiro dia; subiu ao Céu; está sentado à direita de Deus Pai
+                    Todo-poderoso,
+                    donde há de vir para julgar os vivos e os mortos.
+                </p>
+                <p data-aos="fade-up" data-aos-duration="1000">Creio no Espírito Santo; na Santa Igreja Universal; na comunhão dos santos; na remissão dos pecados;
+                    na
+                    ressurreição do corpo; na vida eterna. Amém.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--QUEM SOMOS-->
+
+    <!--LIDERANÇA-->
+    <section class="liderança" id="lideranca">
+        <div class="container section-lideranca">
+            <div class="titulo-lideranca" data-aos="fade-up" data-aos-duration="1000">
+                <span>liderança</span>
+            </div>
+
+            <p data-aos="fade-up" data-aos-duration="1000">Somos ligados a Igreja Presbiteriana de Barra do Piraí, que tem como líderes os seguintes nomes:</p>
+
+
+            <div class="box-card">
+                <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="imagens/pastores/rev-italo.webp" alt="Rev. Ítalo Mendonça Peyroton (Pastor Efetivo)">
+                    <span>Rev. Ítalo Mendonça Peyroton (Pastor Efetivo)</span>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="imagens/fotos/visitante.webp" alt="Rev. Josias Altino (Pastor Colaborador)">
+                    <span>Rev. Josias Altino (Pastor Colaborador)</span>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="imagens/pastores/presb-fabiano.webp" alt="Presb. Fabiano Silva Marques">
+                    <span>Presb. Fabiano Silva Marques</span>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="imagens/pastores/presb-henrique.webp" alt="Presb. Henrique Wagner Cesar">
+                    <span>Presb. Henrique Wagner Cesar</span>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="imagens/pastores/presb-josias.webp" alt="Presb. Josias Eler">
+                    <span>Presb. Josias Eler</span>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="imagens/pastores/presb-menezes.webp" alt="Presb. Menezes Manoel Silva">
+                    <span>Presb. Menezes Manoel Silva</span>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="imagens/pastores/presb-humberto.webp" alt="Presb. Umberto Eller Freitas">
+                    <span>Presb. Umberto Eller Freitas</span>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="imagens/pastores/presb-joao-granadeiro.webp" alt="Presb. João Granadeiro (Responsável pela Congregação em Vassouras)">
+                    <span>Presb. João Granadeiro (Responsável pela Congregação em Vassouras)</span>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!--LIDERANÇA-->
+
+    <!--CONTATO-->
+    <section class="contato" id="contato">
+        <div class="container section-contato">
+            <div class="titulo-contato" data-aos="fade-up" data-aos-duration="1000">
+                <span>contatos</span>
+            </div>
+
+            <div class="box-contato" data-aos="fade-up" data-aos-duration="1000">
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.2806161204444!2d-43.6794678853656!3d-22.418461526263446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9936d5c36324f3%3A0x30ea6c9084cf0fdd!2sIPVas%20-%20Igreja%20Presbiteriana%20em%20Vassouras!5e0!3m2!1spt-BR!2sbr!4v1667162937300!5m2!1spt-BR!2sbr"
+                        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="formas-contato">
+                    <span>Formas de Contato</span>
+                    <div class="email">
+                        <i class="icofont-ui-email"></i>
+                        <span>exemplo@igrejapresbiterianaemvassouras.com.br</span>
+                    </div>
+
+                    <div class="whatsapp">
+                        <i class="icofont-brand-whatsapp"></i>
+                        <span>(00) 00000 - 0000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CONTATO-->
+
+    <!--RODAPÉ-->
+    <section class="rodape">
+        <div class="container section-rodape ok">
+            <span>Igreja Prebiteriana do Brasil em Vassouras</span>
+            <hr>
+            <span>
+                <label>2022</label>
+                - © Todos os direitos reservados.
+            </span>
+        </div>
+    </section>
+    <!--RODAPÉ-->
+
+
+    <!--JS DO SWIPER-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--JS DO AOS-->
+    <script src="js/aos.js"></script>
+    <!--SCRIPT QUE MANIPULA O DOM-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

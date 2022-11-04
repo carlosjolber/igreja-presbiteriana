@@ -1,0 +1,898 @@
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Black.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/**********************FORMATANDO CABEÇALHO**********************/
+/*CABEÇALHO*/
+header {
+    position: fixed;
+    z-index: 9000;
+    border-bottom: solid 2px #68c04c;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #f4f4f2;
+    box-shadow: 0 0 50px 5px black;
+}
+
+.alinhamento {
+    display: flex;
+    align-items: center;
+}
+
+/*LOGOMARCA*/
+.logo {
+    padding: 5px 0;
+}
+
+.logo a {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+/*LOGOMARCA*/
+
+/*MENU*/
+.botao-mobile {
+    display: none;
+}
+
+.menu {
+    background-color: #68c04c;
+    transform: skew(-10deg);
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    transition: 0s;
+}
+
+.menu ul li a {
+    padding: 33px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+.menu ul li a:hover {
+    background-color: white;
+    color: #68c04c;
+    transition: 0.5s;
+}
+
+.menu ul li a:focus {
+    background-color: white;
+    color: #68c04c;
+}
+
+.menu ul li ul {
+    display: none;
+}
+
+.menu ul li ul.active-submenu {
+    position: absolute;
+    top: 51px;
+    display: block;
+    background-color: #68c04c;
+    transition: 1s;
+}
+
+.menu ul ul li a {
+    display: block;
+}
+
+.menu ul ul li a:hover {
+    background-color: white;
+    color: #68c04c;
+    border-bottom: none;
+    border-left: solid 2px #68c04c;
+}
+
+/*MENU*/
+
+/*REDES SOCIAIS*/
+.redes-sociais a {
+    margin: 0;
+    padding: 0 10px;
+    color: #68c04c;
+    text-decoration: none;
+}
+
+.redes-sociais .icofont-youtube-play:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+    color: red;
+
+}
+
+.redes-sociais .icofont-instagram:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+    color: #bc2a8d;
+}
+
+.redes-sociais .icofont-facebook:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+    color: blue;
+}
+
+/*REDES SOCIAIS*/
+
+
+/**********************FORMATANDO CABEÇALHO**********************/
+
+
+
+/**********************SEÇÃO BOAS VINDAS**********************/
+.boas-vindas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagens/biblia.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    height: calc(100vh - 85px);
+}
+
+.secao-boas-vindas {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    height: 50%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.secao-boas-vindas:hover::after {
+    opacity: 1;
+    transition: 1s;
+}
+
+.secao-boas-vindas a {
+    background-color: white;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #02815f;
+    border-radius: 5px;
+}
+
+.secao-boas-vindas a:hover {
+    background-color: #68c04c;
+    transition: 0.3s;
+    color: white;
+}
+
+/**********************SEÇÃO BOAS VINDAS**********************/
+
+
+/**********************SEÇÃO DE FOTOS**********************/
+.secao-fotos {
+    margin: 40px 0;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.titulo {
+    width: 72%;
+}
+
+.titulo span {
+    color: #68c04c;
+    font-family: roboto;
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+.titulo p {
+    text-align: center;
+    color: #02815f;
+}
+
+.fotos .swiper {
+    width: 60%;
+    margin-top: 40px;
+}
+
+.fotos .swiper .swiper-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.fotos .swiper .swiper-wrapper .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.fotos .swiper .swiper-wrapper .swiper-slide img {
+    height: 30%;
+    width: 70%;
+}
+
+/**********************SEÇÃO DE FOTOS**********************/
+
+
+
+
+/**********************SEÇÃO DE ENCONTROS SEMANAIS**********************/
+.section-encontros-semanais {
+    width: 100%;
+    height: max-content;
+    padding: 6% 0;
+    background-color: #02815f;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+.section-encontros-semanais::after {
+    content: '';
+    position: absolute;
+    top: -7%;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 110px;
+    background-color: white;
+    transform: skewY(-2deg)
+}
+
+.encontros-semanais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.encontros-semanais .texto span {
+    color: white;
+    font-family: roboto;
+    text-transform: capitalize;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    margin: 20% 0;
+}
+
+.swiper-encontros-semanais {
+    height: 80vh;
+    width: 100%;
+}
+
+.swiper-encontros-semanais .swiper-wrapper .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartao {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    border: solid 3px white;
+    width: 250px;
+    overflow: hidden;
+    transition: all 0.7s;
+}
+
+.cartao:hover {
+    border: solid 3px #68c04c;
+    transform: rotate(10deg) scale(1.09);
+    box-shadow: 0px 0px 10px 2px black;
+
+}
+
+.cartao:hover>.cartao-conteudo {
+    color: #298144
+}
+
+.cartao .cartao-cabecalho {
+    display: flex;
+    justify-content: center;
+    background-color: #298144;
+    width: 100%;
+
+}
+
+.encontros-semanais .cartao .cartao-cabecalho img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 3px white;
+    position: relative;
+    top: 70px;
+}
+
+.cartao .cartao-conteudo {
+    align-items: center;
+    padding: 35% 0 15% 0;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bolder;
+    color: #68c04c;
+    transition: all 0.7s;
+}
+
+.encontros-semanais .swiper .swiper-button-prev,
+.encontros-semanais .swiper .swiper-button-next {
+    color: white;
+}
+
+.encontros-semanais .swiper .swiper-pagination {
+    bottom: 0;
+}
+
+.encontros-semanais .swiper-pagination-bullet-active {
+    background-color: white;
+}
+
+/**********************SEÇÃO DE ENCONTROS SEMANAIS**********************/
+
+
+
+/**********************SEÇÃO QUEM SOMOS**********************/
+.section-quem-somos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-quem-somos>p {
+    text-align: justify;
+
+    line-height: 30px;
+    color: #02815f;
+}
+
+.mvv {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.mvv>p {
+    text-align: justify;
+    margin-bottom: 50px;
+    line-height: 30px;
+    color: #02815f;
+}
+
+.mvv .box-mvv {
+    margin: 20px 10px;
+    padding: 20px;
+    width: 300px;
+    position: relative;
+    transition: all 1s;
+}
+
+.mvv .box-mvv:hover {
+    background-color: #02815f;
+    color: white;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 5px 5px 10px black;
+    transform: scale(1.03);
+}
+
+.mvv .box-mvv h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #68c04c;
+    font-weight: bolder;
+}
+
+.mvv .box-mvv:hover>h3 {
+    color: white;
+}
+
+.mvv .box-mvv p {
+    text-align: center;
+    line-height: 30px;
+    color: #298144;
+}
+
+.mvv .box-mvv:hover>p {
+    color: white;
+}
+
+.nossa-historia>h4 {
+    font-size: 20px;
+    color: #68c04c;
+    margin-bottom: 30px;
+}
+
+.nossa-historia p {
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 30px;
+    color: #02815f;
+}
+
+.nossa-historia img {
+    width: 100%;
+    border: solid 3px #02815f;
+    border-radius: 30px;
+}
+
+.nossa-historia span {
+    margin: 10px 0 20px 0;
+    display: block;
+    text-align: center;
+    color: #68c04c;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.nossa-crenca h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #68c04c;
+    font-weight: bolder;
+}
+
+.nossa-crenca p {
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 30px;
+    color: #02815f;
+}
+
+/**********************SEÇÃO QUEM SOMOS**********************/
+
+
+
+
+/**********************LIDERANÇA**********************/
+.liderança {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #68c04c;
+    padding: 15% 0 5% 0;
+    overflow-x: hidden;
+}
+
+.liderança::after {
+    content: '';
+    position: absolute;
+    top: -100px;
+    background-color: white;
+    width: 150%;
+    height: 200px;
+    transform: rotate(4deg);
+
+}
+
+.section-lideranca {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.titulo-lideranca {
+    margin-bottom: 50px;
+}
+
+.section-lideranca p {
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.titulo-lideranca span {
+    text-align: center;
+    font-size: 25px;
+    font-family: roboto;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bolder;
+}
+
+.box-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px 1px black;
+    border-radius: 5px;
+    width: 350px;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 5px #68c04c;
+    margin-bottom: 15px;
+}
+
+.card>span {
+    text-align: center;
+    color: #298144;
+}
+
+/**********************LIDERANÇA**********************/
+
+
+
+/**********************CONTATO**********************/
+.contato {
+    margin: 10% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.section-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-contato span {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 25px;
+    font-family: roboto;
+    text-transform: capitalize;
+    color: #68c04c;
+    font-weight: bolder;
+}
+
+.box-contato {
+    margin: 40px 0 0 0;
+
+}
+
+.box-contato iframe {
+    width: 100%;
+    height: 300px;
+}
+
+.box-contato .formas-contato {
+    padding: 20px;
+    background-color: #02815f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-contato .formas-contato>span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.box-contato .formas-contato .email {
+    margin-bottom: 20px;
+}
+
+.box-contato .formas-contato .email i,
+span {
+    color: white;
+}
+
+.box-contato .formas-contato .whatsapp i,
+span {
+    color: white;
+}
+
+/**********************CONTATO**********************/
+
+/**********************RODAPÉ**********************/
+.rodape {
+    background-color: #298144;
+    display: flex;
+    justify-content: center;
+    padding: 2% 0;
+    position: relative;
+}
+
+.rodape:after {
+    content: 'Desenvolvido por: Carlos Jolber';
+    position: absolute;
+    bottom: -58px;
+    background-color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: #298144;
+    font-weight: bolder;
+}
+
+
+.section-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-rodape span {
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 30px;
+}
+
+/**********************RODAPÉ**********************/
+
+
+
+/**********************TAMANHO DAS TELAS - WEB/MOBILE**********************/
+@media (max-width:992px) {
+
+    /**********************CABEÇALHO**********************/
+    /*MENU MOBILE*/
+    header {
+        position: relative;
+        border-bottom: none;
+        position: fixed;
+    }
+
+    .container {
+        width: 768px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .menu {
+        transform: none;
+        position: absolute;
+        top: 84px;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 5px 10px 2px black;
+    }
+
+
+    .menu ul li a {
+        display: block;
+    }
+
+
+
+    .menu ul li:hover>ul {
+        top: 84px;
+    }
+
+    .redes-sociais {
+        position: relative;
+    }
+
+    .secao-boas-vindas {
+        padding: 30px;
+    }
+
+    /**********************SEÇÃO LIDERANÇA**********************/
+    .liderança {
+        padding: 17% 0 0 0;
+    }
+
+    /**********************SEÇÃO LIDERANÇA**********************/
+}
+
+
+@media (max-width:768px) {
+
+    /**********************CABEÇALHO**********************/
+    header {
+        border-bottom: solid 1px #68c04c;
+    }
+
+    .container {
+        width: 576px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        transform: none;
+        position: absolute;
+        top: 84px;
+        left: 0;
+        width: 100%;
+    }
+
+    .menu ul {
+        display: none;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .menu .active-menu {
+        display: block;
+    }
+
+    .menu ul li a {
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+    .menu ul li:hover>ul {
+        top: 0;
+    }
+
+    .menu ul ul {
+        display: none;
+
+    }
+
+    .menu ul ul.active-submenu {
+        display: block;
+        position: relative;
+        top: 0;
+    }
+
+    .botao-mobile {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: #68c04c;
+    }
+
+    .botao-mobile i:active {
+        color: #02815f;
+        transition: 0.3s;
+    }
+
+    .redes-sociais {
+        position: relative;
+        display: flex;
+    }
+
+    /**********************CABEÇALHO**********************/
+
+
+
+    /**********************SEÇÃO BOAS VINDAS**********************/
+    .secao-boas-vindas {
+        padding: 30px;
+        height: 70%;
+    }
+
+    /**********************SEÇÃO BOAS VINDAS**********************/
+
+
+    /**********************SEÇÃO LIDERANÇA**********************/
+    .liderança {
+        padding: 20% 0 0 0;
+    }
+
+    /**********************SEÇÃO LIDERANÇA**********************/
+
+}
+
+
+
+@media (max-width:576px) {
+    .container {
+        width: 450px;
+    }
+
+
+    /**********************SEÇÃO DE FOTOS**********************/
+    .texto {
+        width: 73%;
+    }
+
+    .fotos .swiper{
+        width: 100%;
+    }
+    
+
+    .fotos .swiper .swiper-pagination {
+        bottom: 0 !important;
+    }
+
+    /**********************SEÇÃO DE FOTOS**********************/
+
+
+
+    /**********************SEÇÃO DE ENCONTROS SEMANAIS**********************/
+    .encontros-semanais .swiper .swiper-button-prev,
+    .swiper .swiper-button-next {
+        display: block;
+    }
+
+    .encontros-semanais .swiper .swiper-pagination {
+        display: block;
+    }
+
+    /**********************SEÇÃO DE ENCONTROS SEMANAIS**********************/
+
+
+    /**********************SEÇÃO LIDERANÇA**********************/
+    .liderança {
+        padding: 25% 0 0 0;
+    }
+
+    /**********************SEÇÃO LIDERANÇA**********************/
+}
+
+@media (max-width:450px) {
+    .container {
+        width: 330px;
+    }
+}
+
+/**********************TAMANHO DAS TELAS - WEB/MOBILE**********************/

@@ -659,23 +659,10 @@ span {
 /**********************RODAPÉ**********************/
 .rodape {
     display: flex;
-    justify-content: center;
-    padding: 2% 0;
+    flex-direction: column;
+    align-items: center;
     position: relative;
 }
-
-.rodape:after {
-    content: 'Desenvolvido por: Carlos Jolber';
-    position: absolute;
-    bottom: -58px;
-    background-color: #02815f;
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-    color: white;
-    font-weight: bolder;
-}
-
 
 .section-rodape {
     display: flex;
@@ -696,6 +683,21 @@ span {
     font-weight: bolder;
     line-height: 30px;
     color: #02815f;
+}
+
+.desenvolvedor{
+    display: flex;
+    flex-direction: column;
+    background-color: #02815f;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.desenvolvedor .contato-desenvolvedor i{
+    line-height: 50px;
 }
 
 /**********************RODAPÉ**********************/

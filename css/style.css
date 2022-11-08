@@ -51,7 +51,7 @@ header {
 }
 
 .logo img {
-    width: 100px;
+    width: 139px;
     height: auto;
 }
 
@@ -77,7 +77,7 @@ header {
 }
 
 .menu ul li a {
-    padding: 33px 20px;
+    padding: 27px 20px;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -658,7 +658,6 @@ span {
 
 /**********************RODAPÉ**********************/
 .rodape {
-    background-color: #298144;
     display: flex;
     justify-content: center;
     padding: 2% 0;
@@ -669,11 +668,11 @@ span {
     content: 'Desenvolvido por: Carlos Jolber';
     position: absolute;
     bottom: -58px;
-    background-color: white;
+    background-color: #02815f;
     width: 100%;
     padding: 20px 0;
     text-align: center;
-    color: #298144;
+    color: white;
     font-weight: bolder;
 }
 
@@ -682,12 +681,21 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2% 0;
+    border-top: solid 1px #02815f;
 }
 
-.section-rodape span {
+.section-rodape img{
+    width: 300px;
+    border: solid 1px white;
+    text-shadow: white;
+}
+
+.section-rodape span{
     font-size: 18px;
     font-weight: bolder;
     line-height: 30px;
+    color: #02815f;
 }
 
 /**********************RODAPÉ**********************/
@@ -695,7 +703,7 @@ span {
 
 
 /**********************TAMANHO DAS TELAS - WEB/MOBILE**********************/
-@media (max-width:992px) {
+@media (max-width:1020px) {
 
     /**********************CABEÇALHO**********************/
     /*MENU MOBILE*/
@@ -715,7 +723,7 @@ span {
     .menu {
         transform: none;
         position: absolute;
-        top: 84px;
+        top: 67px;
         left: 0;
         width: 100%;
         z-index: 2;
@@ -768,7 +776,7 @@ span {
     .menu {
         transform: none;
         position: absolute;
-        top: 84px;
+        top: 67px;
         left: 0;
         width: 100%;
     }

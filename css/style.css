@@ -242,23 +242,23 @@ header {
 }
 
 .fotos .swiper {
-    width: 60%;
+    width: 100%;
     margin-top: 40px;
 }
 
-.fotos .swiper .swiper-wrapper{
-    display: flex;
-    align-items: center;
-}
-
 .fotos .swiper .swiper-wrapper .swiper-slide {
-    display: flex;
-    justify-content: center;
+    width: 500px;
+    height: 500px;
 }
 
 .fotos .swiper .swiper-wrapper .swiper-slide img {
-    height: 30%;
-    width: 70%;
+    width: 100%;
+}   
+
+.fotos .swiper .swiper-pagination{
+    position: relative;
+    bottom: 0;
+    padding: 10px 0;
 }
 
 /**********************SEÇÃO DE FOTOS**********************/
@@ -869,10 +869,6 @@ span {
         width: 100%;
     }
 
-
-    .fotos .swiper .swiper-pagination {
-        bottom: 0 !important;
-    }
 
     /**********************SEÇÃO DE FOTOS**********************/
 

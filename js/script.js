@@ -15,26 +15,23 @@ function gerenciarSubmenu() {
 
 
 /*********MANIPULA AS AÇÕES DA SEÇÃO DE FOTOS USANDO O PLUGIN SWIPER.JS*********/
-const swiperSectionFotos = new Swiper('.swiper-fotos', {
-  // PARÂMETROS OPCIONAISs
-  direction: 'horizontal',
-  loop: true,
-  slidesPerView: 1,
-  spaceBetween: 10,
-  speed: 2000,
-  // CASO TENHA PAGINAÇÃO
+var swiper = new Swiper(".swiper-fotos", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: false,
+  },
   pagination: {
-    el: '.swiper-pagination',
-    enabled: true,
-    clickable: true
+    el: ".swiper-pagination",
   },
-  autoplay: {
-    delay: 5000
-  },
-  // SETAS OU FLEXAS DE NAVEGAÇÃO
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    enabled: false, 
   }
 });
 /*********MANIPULA AS AÇÕES DA SEÇÃO DE FOTOS USANDO O PLUGIN SWIPER.JS*********/
